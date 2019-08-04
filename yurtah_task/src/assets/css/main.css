@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas:
+             "header"
+            "section1"
+            "section2"
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+.header{
+    grid-area: header;
+    position: absolute;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+}
+.section1{
+    grid-area: section1;
+    background:url("../image/vidar-nordli-mathisen-yxwBJjtgtUs-unsplash.jpg");
+    min-height: 700px;
+    left: 0px;
+    position: relative;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+}
+.section2{
+    grid-area: section2;
+    background-color: cornflowerblue;
+    position: relative;
+    height: 255px;
+}
+/*@media(max-width: 800px) {*/
+/*    .content{*/
+/*        display: grid;*/
+/*        grid-template-columns: auto;*/
+
+/*        grid-auto-rows: auto;*/
+/*        grid-gap: 20px;*/
+/*        grid-template-areas:*/
+/*                "header "*/
+/*                "aside "*/
+/*                "article"*/
+/*                "footer "*/
+/*    }*/
+/*}*/
+.logo{
+    width: 106px;
+    height: 60px;
+    margin-left: 130px;
+    float: left;
+    top: 0px;
+    background: url("../image/Rectangle 4.png");
+
+}
+.topnav{
+   margin-right: 130px;
+    margin-top: 19px;
+    float: right;
+
+}
+.topnav a{
+    padding: 19px 19px;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration-line: none;
+}
+.topnav a:hover {
+    color: #2F80ED;
+}
+
+.active {
+    text-decoration-line: underline;
+}
+.best_camp{
+    position: absolute;
+    width: 455px;
+    padding: 0px;
+    font-family: Raleway;
+    font-style: normal;
+    height: 118px;
+    /*left: 473px;*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 257px;
+    font-weight:bold;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+
+    color: #1457B0;
+    text-shadow:
+            2px -2px  #FFFFFF,
+            -2px -2px  #FFFFFF,
+            2px 2px  #FFFFFF,
+            -2px 2px   #FFFFFF;
+
+}
+
+
